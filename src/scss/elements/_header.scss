@@ -1,0 +1,89 @@
+.menu__login {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 37px 142px 26px 0;
+}
+
+.logIn {
+  margin: 0 30px;
+  font-size: 14px;
+  color: $text-lighter;
+}
+
+.signIn {
+  border: 1px solid $color-action;
+  font-size: 13px;
+  padding: 9px 10px;
+  color: $text-lighter;
+}
+
+.menu__main {
+  font-size: 18px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 142px - 20px;
+}
+
+.menu__elem {
+  padding: 9px 20px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.active {
+  border: 1px solid $text-main;
+}
+
+.banner__container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  overflow: visible;
+}
+
+.banner__img {
+  background-image: url("../../assets/Home-Hero-Image.jpg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  width: auto;
+  height: calc(100vh - 115px);
+  border: none;
+}
+
+.banner__content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  align-items: center;
+  margin-top: 220px;
+}
+
+.banner__title {
+  font-size: 38px;
+  color: $text-main;
+  text-align: center;
+  line-height: 55px;
+}
+
+.banner__buttons {
+  display: flex;
+  margin-top: 72px;
+}
+
+.banner__button {
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 36px;
+  padding: 15px 0;
+  border: 1px solid $text-main;
+  color: $text-main;
+  width: 310px;
+  text-align: center;
+  line-height: 45px;
+
+  &:first-child {
+    margin-right: 44px;
+  }
+}
