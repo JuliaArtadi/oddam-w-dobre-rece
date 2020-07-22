@@ -11,3 +11,15 @@ a {
   width: 253px;
   padding-top: 30px;
 }
+
+.main__button {
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 36px;
+  padding: 15px 0;
+  border: 1px solid $text-main;
+  color: $text-main;
+  width: 310px;
+  text-align: center;
+  line-height: 45px;
+}

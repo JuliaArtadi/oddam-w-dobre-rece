@@ -16,8 +16,8 @@ export const Banner = () => {
                     </h1>
                     <img src={Decoration} className={'decoration'} alt={'pudełko z rzeczami do oddania'}/>
                     <div className={'banner__buttons'}>
-                        <Link to={'/logowanie'} className={'banner__button'}>Oddaj <br></br>rzeczy</Link>
-                        <Link to={'/logowanie'} className={'banner__button'}>Zorganizuj <br></br> zbiórkę</Link>
+                        <Link to={'/logowanie'} className={'main__button'}>Oddaj <br></br>rzeczy</Link>
+                        <Link to={'/logowanie'} className={'main__button main__button-second'}>Zorganizuj <br></br> zbiórkę</Link>
                     </div>
                 </div>
             </div>

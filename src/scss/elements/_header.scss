@@ -72,18 +72,6 @@
   margin-top: 72px;
 }
 
-.banner__button {
-  text-transform: uppercase;
-  font-weight: lighter;
-  font-size: 36px;
-  padding: 15px 0;
-  border: 1px solid $text-main;
-  color: $text-main;
-  width: 310px;
-  text-align: center;
-  line-height: 45px;
-
-  &:first-child {
-    margin-right: 44px;
+.main__button-second{
+    margin-left: 44px;
   }
-}
