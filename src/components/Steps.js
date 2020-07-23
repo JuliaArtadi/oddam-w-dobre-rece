@@ -9,7 +9,7 @@ import {Link} from "react-router-dom";
 export const Steps = () => {
     return (
         <section className={'steps'}>
-            <h3 className={'steps__main-title'}>Wystarczą 4 proste kroki</h3>
+            <h1 className={'title'}>Wystarczą 4 proste kroki</h1>
             <img src={Decoration} className={'decoration'}/>
             <div className={'steps__container'}>
                 <div className={'steps__elem'}>
