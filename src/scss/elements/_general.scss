@@ -11,7 +11,9 @@ a {
   }
 }
 
-button:focus {
+button:focus,
+textarea:focus,
+input:focus {
   outline: 1px solid $color-section;
 
 }
