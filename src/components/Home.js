@@ -1,7 +1,7 @@
 import React from 'react';
 import {Footer} from './Footer';
 import {ContactForm} from './ContactForm';
-import {Organizations} from './Organizations';
+import {Help} from './Help';
 import {About} from './About';
 import {ButtonDonate} from './ButtonDonate';
 import {Steps} from './Steps';
@@ -16,7 +16,7 @@ export const Home = () => {
             <Steps/>
             <ButtonDonate/>
             <About/>
-            <Organizations/>
+            <Help/>
             <ContactForm/>
             <Footer/>
         </>

@@ -27,7 +27,7 @@ export const MenuMain = () => {
                 O nas
             </Link>
             <Link className={'menu__elem'}
-                  to={'organizations'}
+                  to={'institutions'}
                   spy={true}
                   smooth={true}
                   duration={500}>
