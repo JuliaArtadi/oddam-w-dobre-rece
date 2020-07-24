@@ -6,6 +6,11 @@ export const InstitutionsList = ({list}) => {
     const [pageContent, setPageContent] = useState(null);
     const [pageNum, setPageNum] = useState(null);
 
+    const handleChangePage = e => {
+        let startNumber = e.selected * 3;
+        setPageContent(institutions.slice(startNumber, startNumber + 3));
+    }
+
     useEffect(() => {
         if (institutions !== list && list !== undefined) {
             setInstitutions(list);
@@ -14,11 +19,6 @@ export const InstitutionsList = ({list}) => {
         }
     })
 
-    const handleChangePage = e => {
-        let startNumber = e.selected * 3;
-        setPageContent(institutions.slice(startNumber, startNumber + 3));
-    }
-
     return (
         <>
             <ul className={'inst__list'}>
@@ -26,10 +26,16 @@ export const InstitutionsList = ({list}) => {
                     return (
                         <li key={institution.name} className={'inst__elem'}>
                             <div className="inst__container">
-                                <h3 className={'inst__name'}>{institution.name}</h3>
-                                <p className={'inst__aim'}>{institution.aim}</p>
+                                <h3 className={'inst__name'}>
+                                    {institution.name}
+                                </h3>
+                                <p className={'inst__aim'}>
+                                    {institution.aim}
+                                </p>
                             </div>
-                            <p className={'inst__items'}>{institution.items}</p>
+                            <p className={'inst__items'}>
+                                {institution.items}
+                            </p>
                         </li>
                     )
                 })}

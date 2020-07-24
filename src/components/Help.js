@@ -13,11 +13,12 @@ export const Help = () => {
     const handleChangeInst = e => {
         setCategory(e.target.name);
     }
+
     useEffect(() => {
         institutionsList.getInstitutions(
             data => {
                 setInstitutions(data);
-                setCurrList(data.foundations)
+                setCurrList(data.foundations);
             },
             err => console.log(err))
     }, [])
@@ -40,7 +41,7 @@ export const Help = () => {
     return (
         <section className={'help'} name={'institutions'}>
             <h1 className={'title'}>Komu pomagamy?</h1>
-            <img src={Decoration} className={'decoration'}/>
+            <img src={Decoration} className={'decoration'} alt={'Dekoracja'}/>
             <div className={'help__menu'}>
                 <button className={`help__option ${category === 'foundations' ? 'option-active' : ''}`}
                         name={'foundations'}
@@ -58,7 +59,6 @@ export const Help = () => {
                     Lokalnym zbiórkom
                 </button>
             </div>
-
             <p className={'help__description'}>
                 {description}
             </p>

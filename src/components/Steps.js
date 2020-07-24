@@ -10,10 +10,10 @@ export const Steps = () => {
     return (
         <section className={'steps'}>
             <h1 className={'title'}>Wystarczą 4 proste kroki</h1>
-            <img src={Decoration} className={'decoration'}/>
+            <img src={Decoration} className={'decoration'} alt={'Dekoracja'}/>
             <div className={'steps__container'}>
                 <div className={'steps__elem'}>
-                    <img src={icon1} className={'steps__icon'}/>
+                    <img src={icon1}/>
                     <p className={'steps__title'}>Wybierz rzeczy</p>
                     <svg height="2" width="70">
                         <line x1="0" y1="0" x2="70" y2="0"/>
@@ -21,7 +21,7 @@ export const Steps = () => {
                     <p className={'steps__text'}>ubrania, zabawki, sprzęt i inne</p>
                 </div>
                 <div className={'steps__elem'}>
-                    <img src={icon2}/>
+                    <img src={icon2} className={'steps__icon'}/>
                     <p className={'steps__title'}>Spakuj je</p>
                     <svg height="2" width="70">
                         <line x1="0" y1="0" x2="70" y2="0"/>
