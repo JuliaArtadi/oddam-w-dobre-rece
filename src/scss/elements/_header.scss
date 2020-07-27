@@ -36,35 +36,38 @@
   border: 1px solid $text-main;
 }
 
-.banner__container {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  overflow: visible;
-}
+.banner {
 
-.banner__img {
-  background-image: url("../../assets/Home-Hero-Image.jpg");
-  background-position: right bottom;
-  background-repeat: no-repeat;
-  width: auto;
-  height: calc(100vh - 115px);
-  border: none;
-}
-
-.banner__content {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  left: 50%;
-  align-items: center;
-  margin-top: 220px;
-}
-
-.banner__buttons {
-  display: flex;
-  margin-top: 72px;
-}
-
-.main__button-second{
-    margin-left: 44px;
+  &__container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow: visible;
   }
+
+  &__img {
+    background-image: url("../../assets/Home-Hero-Image.jpg");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    width: auto;
+    height: calc(100vh - 115px);
+    border: none;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    align-items: center;
+    margin-top: 220px;
+  }
+
+  &__buttons {
+    display: flex;
+    margin-top: 72px;
+  }
+}
+
+.main__button-second {
+  margin-left: 44px;
+}

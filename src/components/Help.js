@@ -43,17 +43,17 @@ export const Help = () => {
             <h1 className={'title'}>Komu pomagamy?</h1>
             <img src={Decoration} className={'decoration'} alt={'Dekoracja'}/>
             <div className={'help__menu'}>
-                <button className={`help__option ${category === 'foundations' ? 'option-active' : ''}`}
+                <button className={`help__option ${category === 'foundations' ? 'help__option-active' : ''}`}
                         name={'foundations'}
                         onClick={e => handleChangeInst(e)}>
                     Fundacjom
                 </button>
-                <button className={`help__option ${category === 'organisations' ? 'option-active' : ''}`}
+                <button className={`help__option ${category === 'organisations' ? 'help__option-active' : ''}`}
                         name={'organisations'}
                         onClick={e => handleChangeInst(e)}>
                     Organizacjom pozarządowym
                 </button>
-                <button className={`help__option ${category === 'collections' ? 'option-active' : ''}`}
+                <button className={`help__option ${category === 'collections' ? 'help__option-active' : ''}`}
                         name={'collections'}
                         onClick={e => handleChangeInst(e)}>
                     Lokalnym zbiórkom

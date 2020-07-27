@@ -1,78 +1,76 @@
 .help {
   display: flex;
   flex-direction: column;
-  //justify-content: center;
   align-items: center;
   padding: 70px 0 80px;
-}
 
-.help__menu {
-  padding: 50px 0 70px 0;
-}
+  &__menu {
+    padding: 50px 0 70px 0;
+  }
 
-.help__option {
-  padding: 11px 19px;
-  font-size: 24px;
-  color: $text-main;
-  background-color: rgba(0, 0, 0, 0);
-  margin: 0 60px;
-  border: none;
-  cursor: pointer;
-}
+  &__option {
+    padding: 11px 19px;
+    font-size: 24px;
+    color: $text-main;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0 60px;
+    border: none;
+    cursor: pointer;
 
-.option-active {
-  border: 1px solid $text-main;
-}
+    &-active {
+      border: 1px solid $text-main;
+    }
+  }
 
-.help__description {
-  max-width: 640px;
-  font-size: 22px;
-  line-height: 30px;
-  color: $text-main;
-  padding-bottom: 30px;
-  text-align: center;
-}
-
-.inst__elem {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: $font-alt;
-  color: $text-main;
-  position: relative;
-  width: 100%;
-  font-weight: lighter;
-  padding: 30px 0;
-
-  &:not(:last-child):after {
-    content: "";
-    border-bottom: 1px solid $text-main;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+  &__description {
+    max-width: 640px;
+    font-size: 22px;
+    line-height: 30px;
+    color: $text-main;
+    padding-bottom: 30px;
+    text-align: center;
   }
 }
 
-.inst__list {
-  width: 80vw;
-}
+.inst {
+
+  &__elem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $font-alt;
+    color: $text-main;
+    position: relative;
+    width: 100%;
+    font-weight: lighter;
+    padding: 30px 0;
+
+    &:not(:last-child):after {
+      content: "";
+      border-bottom: 1px solid $text-main;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  &__list {
+    width: 80vw;
+  }
 
 
-.inst__name {
-  font-size: 26px;
-  padding-bottom: 6px;
+  &__name {
+    font-size: 26px;
+    padding-bottom: 6px;
+  }
 
-}
+  &__aim {
+    font-size: 18px;
+  }
 
-.inst__aim {
-  font-size: 18px;
-
-
-}
-
-.inst__items {
-  font-size: 18px;
-
+  &__items {
+    font-size: 18px;
+  }
 }
 
 .hidden {

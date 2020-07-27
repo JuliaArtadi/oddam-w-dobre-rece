@@ -10,7 +10,7 @@ export const ContactForm = () => {
                 <h1 className={'title'}>
                     Skontaktuj się z nami
                 </h1>
-                <img src={Decoration} alt={'Dekoracja'} className={'ecoration'}/>
+                <img src={Decoration} alt={'Dekoracja'} className={'Decoration'}/>
                 <div className={'contact__container'}>
                     <label className={'contact__label'}>
                         Wpisz swoje imię
