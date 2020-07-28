@@ -19,7 +19,6 @@
   &__container {
     display: flex;
     margin-top: 70px;
-
   }
 
   &__label {
@@ -41,6 +40,10 @@
       margin-right: 16px;
     }
 
+    &-error {
+      border-bottom: 1px solid red;
+      margin-bottom: 10px;
+    }
   }
 
 
@@ -48,6 +51,18 @@
     width: 528px;
     height: 97px;
     resize: none;
+  }
+
+  &__error-message {
+    color: red;
+    margin-bottom: 18px;
+    font-size: 12px;
+  }
+
+
+  &__success-message {
+    color: green;
+    padding-top: 10px;
   }
 
   &__submit {
