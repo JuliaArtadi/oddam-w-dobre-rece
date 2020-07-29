@@ -54,7 +54,7 @@ export const ContactForm = () => {
         <section className={'contact'} name={'contact'}>
             <form className={'contact__form'}>
                 <h1 className={'title'}>Skontaktuj się z nami</h1>
-                <img src={Decoration} alt={'Dekoracja'} className={'Decoration'}/>
+                <img src={Decoration} alt={''} className={'decoration'}/>
                 {validation.formValid &&
                 <div className="contact__success-message">Wiadomość została wysłana! <br></br> Wkrótce się
                     skontaktujemy.</div>}

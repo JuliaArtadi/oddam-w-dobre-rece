@@ -3,6 +3,7 @@ import {HashRouter, Route} from 'react-router-dom';
 import {Home} from './components/Home';
 import {Login} from './components/Login';
 import {Register} from './components/Register';
+import {Logout} from "./components/Logout";
 
 function App() {
   return (
@@ -10,10 +11,12 @@ function App() {
       <HashRouter>
         <Route exact path='/'
                component={() => <Home/>}/>
-               <Route exact path='/logowanie'
+               <Route path='/logowanie'
                component={() => <Login/>}/>
-               <Route exact path='/rejestracja'
+               <Route path='/rejestracja'
                component={() => <Register/>}/>
+               <Route path='/wylogowano'
+               component={() => <Logout/>}/>
       </HashRouter>
     </div>
   );
