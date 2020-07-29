@@ -1,0 +1,43 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 123px;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-section;
+    padding: 40px 65px 0 65px;
+    font-weight: 600;
+    margin: 60px 0 40px 0;
+  }
+
+  &__input {
+    @extend .contact__input;
+
+    &-error {
+      @extend .contact__input-error;
+    }
+  }
+
+  &__btn-container {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+  }
+
+  &__button {
+    color: $text-dark;
+    padding: 13px 15px;
+    font-weight: lighter;
+  }
+
+  &__button-frame {
+    border: 1px solid $text-main;
+  }
+
+  &__error-message {
+    @extend .contact__error-message;
+  }
+}
