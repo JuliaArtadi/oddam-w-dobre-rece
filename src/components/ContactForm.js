@@ -35,7 +35,7 @@ export const ContactForm = () => {
             }
         })
             .then(resp => resp.json())
-            .then(data => {
+            .then(() => {
                 setMessage({name: '', email: '', message: ''});
                 setValidation({formValid: true});
             })
@@ -61,7 +61,7 @@ export const ContactForm = () => {
                 <div className={'contact__container'}>
                     <label className={'contact__label'}>Wpisz swoje imię
                         <input
-                            className={`contact__input ${validation.name && 'contact__input-error'}`}
+                            className={`contact__input ${validation.name ? 'contact__input-error' : ''}`}
                             name={'name'}
                             placeholder={'Krzysztof'}
                             onChange={handleChangeForm}
@@ -69,9 +69,10 @@ export const ContactForm = () => {
                         {validation.name && <div className="contact__error-message">{validation.name}</div>}
                     </label>
                     <label className={'contact__label'}>Wpisz swój email
-                        <input className={`contact__input ${validation.email && 'contact__input-error'}`}
+                        <input className={`contact__input ${validation.email ? 'contact__input-error' : ''}`}
                                name={'email'}
                                placeholder={'abc@xyz.pl'}
+                               value={message.email}
                                onChange={handleChangeForm}/>
                         {validation.email && <div className="contact__error-message">{validation.email}</div>}
 
@@ -79,7 +80,7 @@ export const ContactForm = () => {
                 </div>
                 <label className={'contact__label'}>Wpisz swoją wiadomość
                     <textarea
-                        className={`contact__input contact__input-textarea ${validation.message && 'contact__input-error'}`}
+                        className={`contact__input contact__input-textarea ${validation.message ? 'contact__input-error' : ''}`}
                         name={'message'}
                         value={message.message}
                         placeholder={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ' +
