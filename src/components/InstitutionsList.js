@@ -5,10 +5,12 @@ export const InstitutionsList = ({list}) => {
     const [institutions, setInstitutions] = useState(null);
     const [pageContent, setPageContent] = useState(null);
     const [pageNum, setPageNum] = useState(null);
+    const [index, setIndex] = useState(0);
 
     const handleChangePage = e => {
         let startNumber = e.selected * 3;
         setPageContent(institutions.slice(startNumber, startNumber + 3));
+        setIndex(e.selected);
     }
 
     useEffect(() => {
@@ -16,6 +18,7 @@ export const InstitutionsList = ({list}) => {
             setInstitutions(list);
             setPageContent(list.slice(0, 3));
             setPageNum(Math.ceil(list.length / 3));
+            setIndex(0);
         }
     })
 
@@ -45,6 +48,7 @@ export const InstitutionsList = ({list}) => {
                 pageCount={pageNum}
                 pageRangeDisplayed={10}
                 marginPagesDisplayed={0}
+                forcePage={index}
                 previousClassName={'hidden'}
                 nextClassName={'hidden'}
                 activeLinkClassName={'active-page'}
