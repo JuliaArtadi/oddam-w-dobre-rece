@@ -39,32 +39,38 @@ export const Login = () => {
         <>
             <MenuLogin/>
             <MenuMain/>
-            <div className={'login'}>
+            <div className={'account'}>
                 <h1 className="title">Zaloguj się</h1>
                 <img alt={''} src={Decoration} className={'decoration'}/>
-                <form className={'login__form'}>
+                <form className={'account__form'}>
                     <label>Email
                         <input
-                            className={`login__input ${validation.email && 'login__input-error'}`}
+                            className={`account__input ${validation.email && 'account__input-error'}`}
                             name={'email'}
                             value={loginData.email}
                             onChange={handleChangeForm}/>
-                        {validation.email && <div className="login__error-message">{validation.email}</div>}
+                        {validation.email && <div className="account__error-message">{validation.email}</div>}
                     </label>
                     <label>Hasło
                         <input
                             type={'password'}
-                            className={`login__input ${validation.password && 'login__input-error'}`}
+                            className={`account__input ${validation.password && 'account__input-error'}`}
                             name={'password'}
                             value={loginData.password}
                             onChange={handleChangeForm}/>
-                        {validation.password && <div className="login__error-message">{validation.password}</div>}
+                        {validation.password && <div className="account__error-message">{validation.password}</div>}
                     </label>
                 </form>
-                <div className="login__btn-container">
-                    <Link to={'/rejestracja'} className={'login__button'}>Załóż konto</Link>
-                    <Link to={'/'} className={'login__button login__button-frame'} onClick={handleLogin}>Zaloguj
-                        się</Link>
+                <div className="account__btn-container">
+                    <Link to={'/rejestracja'}
+                          className={'account__button'}>
+                        Załóż konto
+                    </Link>
+                    <Link to={'/'}
+                          className={'account__button account__button-frame'}
+                          onClick={handleLogin}>
+                        Zaloguj się
+                    </Link>
                 </div>
             </div>
         </>
