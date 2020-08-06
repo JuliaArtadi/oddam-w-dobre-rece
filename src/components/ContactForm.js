@@ -51,7 +51,7 @@ export const ContactForm = () => {
     }
 
     return (
-        <section className={'contact'} name={'contact'}>
+        <section className={'contact'} name={'contact'} id={'contact'}>
             <form className={'contact__form'}>
                 <h1 className={'title'}>Skontaktuj się z nami</h1>
                 <img src={Decoration} alt={''} className={'decoration'}/>
@@ -80,7 +80,8 @@ export const ContactForm = () => {
                 </div>
                 <label className={'contact__label'}>Wpisz swoją wiadomość
                     <textarea
-                        className={`contact__input contact__input-textarea ${validation.message ? 'contact__input-error' : ''}`}
+                        className={`contact__input contact__input-textarea 
+                        ${validation.message ? 'contact__input-error' : ''}`}
                         name={'message'}
                         value={message.message}
                         placeholder={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ' +

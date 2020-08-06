@@ -26,20 +26,24 @@ export const Help = () => {
     useEffect(() => {
         if (institutions !== null) {
             if (category === 'foundations') {
-                setDescription('W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czymsię zajmują, komu pomagają i czego potrzebują.');
+                setDescription('W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi ' +
+                    'współpracujemy. Możesz sprawdzić czymsię zajmują, komu pomagają i czego potrzebują.');
                 setCurrList(institutions.foundations);
             } else if (category === 'organisations') {
-                setDescription('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.');
+                setDescription('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ' +
+                    'incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.');
                 setCurrList(institutions.organisations);
             } else if (category === 'collections') {
-                setDescription('Lorem collections dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.');
+                setDescription('Lorem collections dolor sit amet, consectetur adipiscing elit, sed do eiusmod ' +
+                    'tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ' +
+                    'exercitation.');
                 setCurrList(institutions.collections);
             }
         }
     }, [category, institutions])
 
     return (
-        <section className={'help'} name={'institutions'}>
+        <section className={'help'} name={'institutions'} id={'institutions'}>
             <h1 className={'title'}>Komu pomagamy?</h1>
             <img src={Decoration} className={'decoration'} alt={'Dekoracja'}/>
             <div className={'help__menu'}>

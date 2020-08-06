@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import {MenuLogin} from "./MenuLogin";
-import {MenuMain} from "./MenuMain";
 import Decoration from '../assets/Decoration.svg'
 import {Link} from "react-router-dom";
+import {MenuMainHash} from "./MenuMainHash";
 
 
 export const Login = () => {
@@ -38,7 +38,7 @@ export const Login = () => {
     return (
         <>
             <MenuLogin/>
-            <MenuMain/>
+            <MenuMainHash/>
             <div className={'account'}>
                 <h1 className="title">Zaloguj się</h1>
                 <img alt={''} src={Decoration} className={'decoration'}/>

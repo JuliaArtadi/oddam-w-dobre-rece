@@ -2,7 +2,7 @@ import React from "react";
 
 export const Statistics = () => {
     return (
-        <section name={'info'} className={'stats'}>
+        <section name={'info'} id={'info'} className={'stats'}>
             <div className={'stats__col'}>
                 <h2 className={'stats__number'}>10</h2>
                 <p className={'stats__title'}>Oddanych worków</p>

@@ -5,7 +5,7 @@ import People from '../assets/People.jpg'
 
 export const About = () => {
     return (
-        <section className={'about'} name={'about'}>
+        <section className={'about'} name={'about'} id={'about'}>
             <div className={'about__col'}>
                 <div className={'about__container'}>
                     <h1 className={'title'}>

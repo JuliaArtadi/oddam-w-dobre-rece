@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 
 export const Banner = () => {
     return (
-        <main name={'start'}>
+        <main name={'start'} id={'start'}>
             <MenuLogin/>
             <MenuMain/>
             <div className={'banner__container'}>

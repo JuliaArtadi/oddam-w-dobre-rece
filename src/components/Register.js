@@ -1,9 +1,8 @@
 import React, {useState} from 'react';
 import {MenuLogin} from "./MenuLogin";
-import {MenuMain} from "./MenuMain";
 import Decoration from '../assets/Decoration.svg'
 import {Link} from "react-router-dom";
-
+import {MenuMainHash} from "./MenuMainHash";
 
 export const Register = () => {
     const [registrationData, setRegistrationData] = useState({email: '', password: '', repeatPassword: ''});
@@ -42,7 +41,7 @@ export const Register = () => {
     return (
         <>
             <MenuLogin/>
-            <MenuMain/>
+            <MenuMainHash/>
             <div className={'account'}>
                 <h1 className="title">Załóż konto</h1>
                 <img alt={''} src={Decoration} className={'decoration'}/>

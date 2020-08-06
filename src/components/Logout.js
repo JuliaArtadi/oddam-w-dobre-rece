@@ -1,15 +1,15 @@
 import React from "react";
 import {MenuLogin} from "./MenuLogin";
-import {MenuMain} from "./MenuMain";
 import Decoration from '../assets/Decoration.svg'
 import {Link} from "react-router-dom";
+import {MenuMainHash} from "./MenuMainHash";
 
 
 export const Logout = () => {
     return (
         <>
             <MenuLogin/>
-            <MenuMain/>
+            <MenuMainHash/>
             <section className={'account'}>
                 <h1 className={'title'}>Wylogowanie nastąpiło <br></br>pomyślnie!</h1>
                 <img src={Decoration} alt={''} className={'decoration decoration-margin-bottom'}/>
