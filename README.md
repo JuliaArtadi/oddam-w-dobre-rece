@@ -1,68 +1,62 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Oddam w dobre ręce
 
-## Available Scripts
+Web application created as a project on a **JavaScript Developer: React** course at CodersLab.
 
-In the project directory, you can run:
+The main purpose of this project is to allow user to give away unwanted items to trustworthy institutions.
 
-### `npm start`
+Project contains contact form and login/register form with validation and uses React Router, React Router Hash Link, 
+React Scroll and React Paginate. For now project is made for 1900px wide screens.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Tools and technologies
 
-### `npm test`
+* Create React App
+* React 16.13.1
+* React Scroll 1.8.0
+* React Dom 16.13.1
+* React Paginate 6.3.2
+* React Router Dom 5.2.0
+* React Router Hash Link 2.0.0
+* Node Sass 4.14.1
+* JavaScript ES6
+* HTML 5
+* JSON server version: 0.16.1
+* GIT
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Setup
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clone this repository to  the chosen directory on your computer using 
+`git clone https://github.com/JuliaArtadi/oddam-w-dobre-rece`
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Go to the cloned project directory using command `cd oddam-w-dobre-rece`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Install all dependencies with `npm i`.
 
-### `npm run eject`
+Then install json-server globally by running `npm i -g json-server`.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+After all the dependencies are installed successfully run json-server with the command 
+`json-server --watch src/database/db_institutions.json`.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Open second terminal window and run `npm start` to run the app in development mode and `y` to run the app 
+on another port as json-server is already running on your default port.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Page should open automatically, if not, try to open http://localhost:3001/.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Further project development
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* RWD
+* Firebase Authentication
+* Give away form connected to Firebase
+* Administration panel
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Author
 
-### Code Splitting
+My name is Julia Bandera, I am a Junior FrontEnd Developer.  
+You can find me on:  
+[GitHub](https://github.com/JuliaArtadi)  
+[LinkedIn](https://www.linkedin.com/in/julia-bandera/)  
+or write me an email at julia.a.bandera@gmail.com
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+UX prototype was made by Magda - CodersLab graduate.
